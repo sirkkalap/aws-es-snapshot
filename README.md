@@ -7,6 +7,10 @@ Copy aws-snapshot.example.py to aws-snapshot.py and follow the instructions in t
 NOTE: In addition to the instructions You will need to add an IAM User with permission to
 iam:PassRole to pass the S3 permission Role [1] "IAM Role" to ES.
 
+NOTE: You will not be able to restore .kibana settings file. You may export and import saved objects from
+Kibana user interface `Kibana -> Management -> Saved Objects -> Export / Import`. Note that this will not
+restore the Advanced settings.
+
 ```
 {
     "Version": "2012-10-17",
